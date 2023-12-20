@@ -12,7 +12,7 @@ public class Triangle{
 
         boolean i = ((a + b) > c && (a + c) > b && (b + c) > a);
 
-        System.out.println(a + " , " + b + " , " + c +": " + i);
+        System.out.println(a + ", " + b + ", " + c +": " + i);
      
     
 	}
