@@ -4,6 +4,25 @@
  */
 public class GenThree {
 	public static void main(String[] args) {
-		// Put your code here	
+
+		int a = Integer.parseInt(args[0]);
+        int b = Integer.parseInt(args[1]);
+
+        int maxRange = Math.min(a, b);
+        int minRange = Math.max(a, b);
+        
+        int randomNumber1 = (int)(Math.random() * (maxRange - minRange)) + minRange;
+        int randomNumber2 = (int)(Math.random() * (maxRange - minRange)) + minRange;
+        int randomNumber3 = (int)(Math.random() * (maxRange - minRange)) + minRange;
+
+        System.out.println(randomNumber1);
+        System.out.println(randomNumber2);
+        System.out.println(randomNumber3);
+
+        int i = Math.min(randomNumber1, randomNumber2);
+        int j = Math.min(randomNumber3, i);
+
+        System.out.println("The minimal generated number was " + j);
+       
 	}
 }
