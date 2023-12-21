@@ -8,8 +8,8 @@ public class GenThree {
 		int a = Integer.parseInt(args[0]);
         int b = Integer.parseInt(args[1]);
 
-        int maxRange = Math.min(a, b);
-        int minRange = Math.max(a, b);
+        int maxRange = Math.max(a, b);
+        int minRange = Math.min(a, b);
         
         int randomNumber1 = (int)(Math.random() * (maxRange - minRange)) + minRange;
         int randomNumber2 = (int)(Math.random() * (maxRange - minRange)) + minRange;
